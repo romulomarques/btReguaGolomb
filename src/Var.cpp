@@ -11,6 +11,8 @@ Var::Var() {	}
 
 Var::Var(int li, int ls)
 {
+    if (ls < li)
+        troca(li,ls);
 
     for (int v=li; v<=ls; v++)
         _dom.push_back(v);
